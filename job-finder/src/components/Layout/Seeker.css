@@ -1,0 +1,18 @@
+.Card{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.128);
+    gap: 15rem;
+    align-items: baseline;
+    
+    margin-inline: 1rem;
+    margin-right: 5rem;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.Card button{
+    align-self: center;
+    padding: 1rem;
+    border-radius:20px;
+    width: 10%;
+}

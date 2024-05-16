@@ -1,0 +1,19 @@
+.container{
+    background-color: #264653;
+   display: flex;
+
+    padding: 1rem;
+    justify-content: space-between;
+    
+    align-items: center;
+    gap: 3rem;
+    border-radius: .8rem;
+}
+.container p{
+    color: #ffffff;
+    font-size: 18px;
+}
+.container img{
+    margin-top: 10px;
+    width: 2rem;
+}

@@ -1,0 +1,40 @@
+main{
+    display: flex;
+    margin-top: 73px;
+    height: max-content;
+    
+}
+main input[type='search']{
+    width: 90%;
+    padding: .8rem;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.brn{
+    width:6%;
+    
+    padding: .8rem;
+    border-radius: 20px;
+}
+footer{
+    margin-top: 0;
+}
+.frm{
+    width: 100%;
+    padding: 1rem;
+}
+.navv{
+    flex-grow: 1;
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    height: 100%;
+}
+.mai{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+}

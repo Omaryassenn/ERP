@@ -1,0 +1,17 @@
+.containe {
+    background-color: #8a8a8a5e;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    margin-top: 5rem;
+    border-radius: .8rem;
+    flex-direction: column;
+}
+.infoo img{
+    width: 5rem;
+}
+#cv{
+    object-fit: contain;
+    width: 2.5rem;
+    mix-blend-mode: color-burn;
+}

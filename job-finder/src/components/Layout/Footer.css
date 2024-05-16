@@ -1,0 +1,29 @@
+footer{
+ 
+    background: #264653;
+ 
+    background-size: cover;
+
+    height:fit-content;
+   
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+padding-inline: 5rem;
+padding-top: 1rem;
+
+}
+p{
+    color: #ffffff;
+}
+.xx span{
+   display: flex;
+   gap: 3rem;
+}
+.icons{
+    display: flex;
+    gap: 1rem;
+}
+.icons img{
+    width: 2rem;
+}

@@ -1,0 +1,42 @@
+.first-row{
+  align-items:center ;
+  text-align: start !important;
+}
+.first-row h1{
+color: #E9C46A;
+}
+.first-row p{
+    text-align: start;
+    color: #ffffff;
+    font-size: 20px;
+}
+hr{
+    width: 100%;
+}
+.scnd-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+.main-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h3{
+    color: #E9C46A;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.scnd-row{
+    margin-bottom: 2rem;
+}

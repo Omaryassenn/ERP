@@ -1,0 +1,14 @@
+.sideBar{
+    min-height: 100vh;
+    background-color: #26465395;
+    width: fit-content;
+    padding-inline: 2.5rem;
+    padding-top: .5rem;
+   
+}
+aside button{
+    margin-top: 20px;
+    width: 100%;
+    padding: .5rem;
+   
+}
