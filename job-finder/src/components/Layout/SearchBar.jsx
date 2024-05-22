@@ -13,7 +13,7 @@ const SearchBar = ({ onSearch }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='frm'>
+    <form onSubmit={handleSubmit} className='frm search'>
       <input
         type="search"
         placeholder="Search..."

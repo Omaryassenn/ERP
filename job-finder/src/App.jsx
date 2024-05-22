@@ -11,6 +11,7 @@ import SideBar from './components/Layout/sideBar';
 import Register from './components/Pages/Register';
 import Dropzone from './components/Ui/Dropzone';
 import SearchBar from './components/Layout/SearchBar';
+import Templates from './components/Pages/Templates';
 import FindSeekers from './components/Pages/FindSeekers';
 import EditProfile from './components/Pages/EditProfile';
 
@@ -21,7 +22,10 @@ function App() {
        
         <Routes>
           <Route path="/" element={<Middle />} />
+          <Route path="/templates" element={<Templates />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/find" element={<FindSeekers />} />
+          <Route path="/completeprofile" element={<CompleteProfile />} />
           <Route path="register" element={<Register />} />
           {/* Add more routes for other pages */}
         </Routes>

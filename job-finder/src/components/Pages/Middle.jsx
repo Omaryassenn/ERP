@@ -20,14 +20,14 @@ const Middle = ()=>{
             <div className="scnd-row">
                 <div className="left">
                     <h3>Job seekers</h3>
-                    <Card Text={'Upload and manage your CV'}></Card>
-                    <Card Text={'Access CV templates and customize your profile'}></Card>
+                    <Card Text={'Upload and manage your CV'} link={'/completeprofile'} ></Card>
+                    <Card Text={'Access CV templates and customize your profile'} link={'/templates'}></Card>
                     <Card Text={'Highlight skills, experience, achievements'}></Card>
                 </div>
                 <div className="right"><h3>Employers</h3>
                     <Card Text={'Streamlined candidate search'}></Card>
                     <Card Text={'Matchmaking based on job and skills'}></Card>
-                    <Card Text={'Access diverse talent pool'}></Card></div>
+                    <Card Text={'Access diverse talent pool'} link={'/find'}></Card></div>
             </div>
         </div>
         <Footer></Footer>

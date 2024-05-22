@@ -22,6 +22,9 @@ footer{
 }
 .frm{
     width: 100%;
+}
+.search{
+    display: flex;
     padding: 1rem;
 }
 .navv{

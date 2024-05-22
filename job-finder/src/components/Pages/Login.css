@@ -15,7 +15,7 @@ a{
   margin-left: 5px;
 }
 .left-side{
-  
+  margin: 1rem;
     width: 50%;
 }
 
@@ -30,7 +30,7 @@ a{
     flex-direction: column;
     
     justify-content: center;
-   
+    
     width: 64%;
     height: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -57,7 +57,7 @@ a{
   
   .error-message {
     color: #ff0000; 
-    font-size: 0.9rem; 
+    font-size: 15px;
     animation: pop 0.3s ease forwards; 
     opacity: 0;
   }
@@ -93,12 +93,7 @@ a{
   .submit-button:hover {
     background-color: #176685; 
   }
-  .error-message {
-    color: #ff0000; 
-    font-size: 0.9rem; 
-    animation: pop 0.3s ease forwards; 
-    opacity: 0;
-  }
+
   
   @keyframes pop {
     0% {

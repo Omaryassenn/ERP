@@ -41,7 +41,7 @@ import { Link } from 'react-router-dom';
                         <div className="form-group">
 
                             <label htmlFor="email" className="label">
-                           Email*:</label>
+                           Email <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
 
                             <Field type="email" name="email" id="email" className="input-field" placeholder='JohnDoe@example.com' />
                             <ErrorMessage name="email" component="div" className="error-message" />
@@ -49,13 +49,13 @@ import { Link } from 'react-router-dom';
                         </div>
                         <div className="form-group">
                             <label htmlFor="password" className="label">
-                            Password*:</label>
+                            Password <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
                             <Field type="password" name="password" id="password" className="input-field"  placeholder='************'/>
                             <ErrorMessage name="password" component="div" className="error-message" />
                             
                         </div>
                         <button  type="submit" disabled={isSubmitting} className="submit-button">
-                            Login
+                          <Link to='/completeprofile' style={{color:'white'}}>Login</Link>  
                         </button>
                         <p className='create'>Don't have an account?<Link to="/register"> Create one</Link>
                             </p>

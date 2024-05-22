@@ -2,12 +2,13 @@ import './Login.css'
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import Nav from '../Layout/nav';
+import { Link } from 'react-router-dom';
 import Footer from '../Layout/Footer';
  const Register = () => {
     return(
         <>
         <Nav></Nav>
-        <div className='container-lgn' style={{marginTop:'2rem'}}>
+        <div className='container-lgn' style={{marginTop:'76px'}}>
          {/*  <div className='right-side'>
                 <img src={img} alt="" />
             </div>*/ } 
@@ -56,7 +57,7 @@ import Footer from '../Layout/Footer';
                         <Form className='frm'>
                             <div className="form-group">
                             <label htmlFor="Name" className="label">
-                            Name* </label>
+                            Name <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
                             <Field type="Name" name="Name" id="Name" className="input-field"  placeholder='John Doe'/>
                             <ErrorMessage name="name" component="div" className="error-message" />
                             
@@ -65,7 +66,7 @@ import Footer from '../Layout/Footer';
                         <div className="form-group">
 
                             <label htmlFor="email" className="label">
-                           Email* </label>
+                           Email <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
 
                             <Field type="email" name="email" id="email" className="input-field" placeholder='JohnDoe@example.com' />
                             <ErrorMessage name="email" component="div" className="error-message" />
@@ -73,27 +74,27 @@ import Footer from '../Layout/Footer';
                         </div>
                         <div className="form-group">
                             <label htmlFor="Address" className="label">
-                            Address* </label>
+                            Address <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
                             <Field type="text" name="Address" id="Address" className="input-field"  placeholder='Ain-Shams, Cairo, Egypt'/>
                             <ErrorMessage name="address" component="div" className="error-message" />
                             
                         </div>
                         <div className="form-group">
                             <label htmlFor="Phone" className="label">
-                            Phone* </label>
+                            Phone <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
                             <Field type="text" name="Phone" id="Phone" className="input-field"  placeholder='Ain-Shams, Cairo, Egypt'/>
                             <ErrorMessage name="phone" component="div" className="error-message" />
                             
                         </div>
                         <div className="form-group">
                             <label htmlFor="password" className="label">
-                            Password* </label>
+                            Password <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
                             <Field type="password" name="password" id="password" className="input-field"  placeholder='************'/>
                             <ErrorMessage name="password" component="div" className="error-message" />
                             
                         </div>
                         <div className="form-group">
-        <label className="label">Role*</label>
+        <label className="label">Role <span style={{color:'red' , fontSize:'19px'}}>*</span></label>
         <div className="radio-group">
           <label>
             <Field type="radio" name="role" value="HR" onChange={handleChange} />
@@ -110,14 +111,14 @@ import Footer from '../Layout/Footer';
         <>
           <div className="form-group">
             <label htmlFor="companyName" className="label">
-              Company Name*
+              Company Name <span style={{color:'red' , fontSize:'19px'}}>*</span>
             </label>
             <Field type="text" name="companyName" id="companyName" className="input-field" placeholder='Company Name'/>
             <ErrorMessage name="companyName" component="div" className="error-message" />
           </div>
           <div className="form-group">
             <label htmlFor="industry" className="label">
-              Industry*
+              Industry <span style={{color:'red' , fontSize:'19px'}}>*</span>
             </label>
             <Field type="text" name="industry" id="industry" className="input-field" placeholder='Industry'/>
             <ErrorMessage name="industry" component="div" className="error-message" />
@@ -127,6 +128,7 @@ import Footer from '../Layout/Footer';
                         <button type="submit" disabled={isSubmitting} className="submit-button">
                             Register
                         </button>
+                        <p className='create'>Already Have an account? <Link to='/login'>Sign in</Link></p>
                         </Form>
                     )}
                     </Formik>
